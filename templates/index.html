@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Linking My JavaScript Code -->
+    <script src="{{ url_for('static', filename='Cursor.js') }}"></script>
+    <!-- Linking My CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <!-- Linking an external library to create media icons (Facebook, Instagram, etc.) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>GIC</title>
+  </head>
+  <!-- Beginning Of My Body -->
+  <body>
+    <!-- Making Divs To Make My Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <!-- Main section of the webpage -->
+    <section>
+      <!-- My Header Section Which consists of a navigational bar and logo -->
+      <header>
+        <!-- Logo with link to homepage -->
+        <h2>
+          <a href="/" class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/8/81/UofG_Coat_of_Arms.png"
+              alt=""
+            />
+          </a>
+        </h2>
+        <!-- Navigation links -->
+        <div class="navigation">
+          <a href="/">HOME</a>
+          <a href="/about-us">DATA?</a>
+          <a href="/form">FORM</a>
+        </div>
+      </header>
+      <!-- Content section -->
+      <div class="content">
+        <!-- Information section -->
+        <div class="info">
+          <!-- Main title -->
+          <h2>Welcome to <span>Glasgow International College!</span></h2>
+          <!-- Information paragraph -->
+          <p>
+            We're thrilled to have you join our community. At GIC, we're
+            dedicated to providing you with a supportive environment where you
+            can thrive academically and personally. Whether you're starting a
+            pathway program or preparing for university studies, we're here to
+            guide and support you every step of the way. Welcome aboard – let's
+            embark on this journey together!
+          </p>
+          <!-- Button for more information -->
+          <a href="/about-us" class="info-btn"
+            >More Info</a
+          >
+        </div>
+      </div>
+      <!-- Media icons section -->
+      <div class="media-icons">
+        <!-- Facebook icon -->
+        <a href="https://www.facebook.com/GICGlasgow/?locale=en_GB"
+          ><i class="fab fa-facebook-f" aria-hidden="true"></i
+        ></a>
+        <!-- Twitter icon -->
+        <a href="https://twitter.com/GICGlasgow"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <!-- Instagram icon -->
+        <a href="https://www.instagram.com/gicglasgow/"
+          ><i class="fab fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+      <!-- Embedding YouTube video -->
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ryzZoTomfh8?si=z0_ePaVFvFRV-2-a"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>

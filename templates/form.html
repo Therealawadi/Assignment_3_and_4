@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="{{ url_for('static', filename='Cursor.js') }}"></script>
+    <!-- Link to external CSS stylesheet -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='form.css') }}"
+    />
+    <!-- Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>GIC Data Collection</title>
+  </head>
+
+  <body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <section>
+      <!-- Header section with logo -->
+      <header>
+        <h2>
+          <!-- Link to homepage -->
+          <a href="/" class="logo">
+            <!-- Logo image -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/8/81/UofG_Coat_of_Arms.png"
+              alt=""
+            />
+          </a>
+        </h2>
+      </header>
+      <!-- Content section -->
+      <div class="content">
+        <!-- Form section -->
+        <section>
+          <header>
+            <!-- Title of the form -->
+            <h2>Student Progress Questionnaire</h2>
+          </header>
+          <!-- Form element -->
+        <form action="{{ url_for('form') }}" method="POST">
+    <!-- Input field for name -->
+    <div class="form-group">
+        {{ form.name.label }}
+        {{ form.name }}
+    </div>
+    <!-- Input field for student number -->
+    <div class="form-group">
+        {{ form.student_number.label }}
+        {{ form.student_number }}
+    </div>
+    <!-- Input field for email -->
+    <div class="form-group">
+        {{ form.email.label }}
+        {{ form.email }}
+    </div>
+    <!-- Textarea field for grades obtained -->
+    <div class="form-group">
+        {{ form.grades.label }}
+        {{ form.grades }}
+    </div>
+    <!-- Select field for overall satisfaction -->
+    <div class="form-group">
+       {{ form.satisfaction.label }}
+        {{ form.satisfaction }}
+    </div>
+    <!-- Textarea field for suggestions for improvement -->
+    <div class="form-group">
+        {{ form.improvement.label }}
+        {{ form.improvement }}
+    </div>
+    <!-- Submit button -->
+ {{ form.button }}
+</form>
+
+          <button class="previous">
+            <a href="/about-us">Back</a>
+          </button>
+        </section>
+      </div>
+      <!-- Media icons section -->
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </body>
+</html>

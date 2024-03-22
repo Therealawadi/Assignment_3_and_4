@@ -1,0 +1,155 @@
+/* Importing the Poppins font from Google Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Setting standards for the entire web page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Applying the Poppins font to all elements */
+    cursor: none; /* Hiding the cursor by default */
+}
+
+/* Styling for the cursor dot */
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #129dd4;
+}
+
+/* Styling for the cursor outline */
+.cursor-outline {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #129dd4;
+    transition: width 0.3s ease, height 0.3s ease; /* Adding transition effect */
+}
+
+/* Styling for both cursor elements */
+.cursor-dot,
+.cursor-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Styling for the section */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+}
+
+/* Styling for the header */
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the logo */
+header .logo img {
+    height: 100px;
+}
+
+/* Styling for navigation links */
+header .navigation a {
+    color: #133759;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: color 0.3s; 
+}
+
+/* Styling for navigation links (except the last one) */
+header .navigation a:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Styling for navigation links on hover */
+header .navigation a:hover {
+    color: #129dd4;
+}
+
+/* Styling for content */
+.content {
+    max-width: 650px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* Styling for content information */
+.content .info h2 {
+    color: #133759;
+    font-size: 48px; 
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2; 
+    margin-bottom: 30px;
+}
+
+/* Styling for content information (span) */
+.content .info h2 span {
+    color: #129dd4;
+}
+
+/* Styling for content information paragraph */
+.content .info p {
+    color: #133759;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/* Styling for media icons */
+.media-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for media icons links */
+.media-icons a {
+    color: #133759;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Styling for media icons links on hover */
+.media-icons a:hover {
+    color: #129dd4; 
+}
+
+/* Styling for info button */
+.info-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #129dd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Styling for info button on hover */
+.info-btn:hover {
+    background-color: #0a7ea3;
+    transform: translateY(-3px);
+}

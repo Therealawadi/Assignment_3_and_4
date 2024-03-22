@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Linking My JavaScript Code -->
+    <script src="{{ url_for('static', filename='Cursor.js') }}"></script>
+    <!-- Linking My CSS -->
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='about-us.css') }}"
+  />
+    <!-- Linking an external library to create media icons (Facebook, Instagram, etc.) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>DATA?</title>
+  </head>
+  <!-- Beginning Of My Body -->
+  <body>
+    <!-- Making Divs To Make My Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- Main section of the webpage -->
+    <section>
+      <!-- My Header Section Which consists of a navigational bar and logo -->
+      <header>
+        <!-- Logo with link to homepage -->
+        <h2>
+          <a href="/" class="logo"
+            ><img src="https://upload.wikimedia.org/wikipedia/en/8/81/UofG_Coat_of_Arms.png" alt=""
+          /></a>
+        </h2>
+        <!-- Navigation links -->
+        <div class="navigation">
+          <a href="/">HOME</a>
+          <a href="/about-us">DATA?</a>
+          <a href="/form">FORM</a>
+        </div>
+      </header>
+      <!-- Content section -->
+      <div class="content">
+        <!-- Information section -->
+        <div class="info">
+          <!-- Main title -->
+          <h2>WHY WE COLLECT <span>DATA </span></h2>
+          <!-- Information paragraph -->
+          <p>
+            As an educational institution, we collect student data to ensure
+            that we can provide the best possible learning experience and
+            support to our students. This data helps us understand the diverse
+            needs of our student body, tailor our educational programs and
+            services to meet those needs, and continuously improve our offerings
+            over time. By gathering information such as academic performance,
+            demographic details, and feedback from students, we can identify
+            areas for enhancement, implement targeted interventions, and measure
+            the effectiveness of our initiatives. Additionally, student data
+            enables us to comply with legal and regulatory requirements,
+            maintain accurate records, and safeguard the welfare and security of
+            our students. Ultimately, our goal in collecting student data is to
+            empower our students to succeed academically, professionally, and
+            personally, while fostering a safe, inclusive, and supportive
+            learning environment.
+          </p>
+          <!-- Button for more information -->
+          <a href="/form" class="info-btn">FILL THE FORM</a>
+        </div>
+       </div>
+      </div>
+      <!-- Media icons section -->
+      <div class="media-icons">
+        <!-- Facebook icon -->
+        <a href="https://www.facebook.com/GICGlasgow/?locale=en_GB"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <!-- Twitter icon -->
+        <a href="https://twitter.com/GICGlasgow"><i class="fa-brands fa-x-twitter"></i></i></a>
+        <!-- Instagram icon -->
+        <a href="https://www.instagram.com/gicglasgow/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </body>
+</html>
