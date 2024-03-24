@@ -36,8 +36,13 @@ def form():
         # Write the form data to a text file
         with open("information.txt", "a") as f:
             f.write(
-                f"Name: {name}, Student Number: {student_number}, Email: {email}, Grades: {grades}, Satisfaction: {satisfaction}, Improvement: {improvement}\n")
-
+                f"Name: {name}\n"
+                f"Student Number: {student_number}\n"
+                f"Email: {email}\n"
+                f"Grades: {grades}\n"
+                f"Satisfaction: {satisfaction}\n"
+                f"Improvement: {improvement}\n\n"
+            )
         # Redirect to a thank you page after form submission
         return redirect(url_for('thank_you'))
     return render_template("form.html", form=form)  # Render the form template with the form object
